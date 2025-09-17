@@ -6,22 +6,22 @@
 ![Blazor](https://img.shields.io/badge/Blazor-Server-512BD4?logo=blazor)
 ![SQL Server](https://img.shields.io/badge/SQL-Server-red?logo=microsoftsqlserver)
 ![License](https://img.shields.io/badge/license-MIT-green)
+---
 
-
-Ứng dụng quản lý cho thuê phòng trọ, xây dựng bằng **.NET 9.0 (C#)**.  
-Dự án hỗ trợ cả **WinForms** và **Blazor Server**, sử dụng **SQL Server** để lưu trữ dữ liệu.  
+A rental room management application built with **.NET 9.0 (C#)**.  
+The project supports both **WinForms** and **Blazor Server**, using **SQL Server** as the database.
 
 ---
 
-## ✨ Tính năng chính
-- Quản lý phòng trọ, hợp đồng, và người thuê.
-- Giao diện desktop với **WinForms**.
-- Giao diện web với **Blazor Server**.
-- Sử dụng **Entity Framework Core** kết nối cơ sở dữ liệu.
-  
+## ✨ Key Features
+- Manage rental rooms, contracts, and tenants.
+- Desktop interface with **WinForms**.
+- Web interface with **Blazor Server**.
+- **Entity Framework Core** for database access.
+
 ---
 
-## 🛠️ Công nghệ
+## 🛠️ Technologies
 - **.NET 9.0 / C#**
 - **WinForms**
 - **Blazor Server**
@@ -30,13 +30,6 @@ Dự án hỗ trợ cả **WinForms** và **Blazor Server**, sử dụng **SQL S
 
 ---
 
-## 🙋‍♀️ Tác giả
-- Nguyễn Thị Xuân Nhi (aka Cenie925)
-- Linkedin: https://www.linkedin.com/in/nguyen-thi-xuan-nhi/
-
----
-## 📌 Ghi chú
-
-Dự án được mình phát triển với mục đích học tập và ứng dụng kiến thức đã học được.
-Đóng góp ý kiến, pull request luôn được hoan nghênh! 🚀
- 
+## 📌 Notes
+This project was developed for learning purposes and to apply acquired knowledge.  
+Feedback and pull requests are always welcome! 🚀
