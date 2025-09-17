@@ -1,0 +1,62 @@
+﻿@page "/"
+@namespace PhongTro3.Blazor.Server
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using DevExpress.ExpressApp.Blazor.Components
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- meta name="theme-color" content="#000000" -->
+    <title>PhongTro3</title>
+    <base href="~/" />
+    <component type="typeof(BootstrapThemeLink)" render-mode="Static" />
+</head>
+    <!--nhúng Js vào _Host.cshtml-->
+    <script src="js/cookie-helper.js"></script>
+
+<body>
+    <component type="typeof(SplashScreen)" render-mode="Static" param-Caption='"PhongTro3"' param-ImagePath='"images/SplashScreen.svg"' />
+
+    <link href="_content/DevExpress.ExpressApp.Blazor/styles.css" asp-append-version="true" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <!-- Uncomment this link to enable CSS isolation. For more information, refer to the following topic: https://learn.microsoft.com/en-us/aspnet/core/blazor/components/css-isolation -->
+    <!-- <link href="PhongTro3.Blazor.Server.styles.css" rel="stylesheet"> -->
+
+    <app class="d-none">
+        <component type="typeof(App)" render-mode="Server" />
+    </app>
+
+    <component type="typeof(AlertsHandler)" render-mode="Server" />
+
+    <div id="blazor-error-ui">
+        <component type="typeof(BlazorError)" render-mode="Static" />
+    </div>
+
+    <script src="_framework/blazor.server.js"></script>
+
+    <!--script chỗ cookie thầy gửi-->
+    <script>
+        window.blazorExtensions = {
+
+            WriteCookie: function (name, value, days) {
+
+                var expires;
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toGMTString();
+                }
+                else {
+                    expires = "";
+                }
+                document.cookie = name + "=" + value + expires + "; path=/";
+            }
+        }
+    </script>
+
+</body>
+</html>
