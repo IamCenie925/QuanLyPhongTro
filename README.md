@@ -8,28 +8,29 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ---
 
-A rental room management application built with **.NET 9.0 (C#)**.  
-The project supports both **WinForms** and **Blazor Server**, using **SQL Server** as the database.
+A rental room management application built with **.NET 9.0 (C#)**.
+This is an in-development learning project, applying knowledge across both **WinForms** and **Blazor Server**, using **SQL Server** as the database.
 
 ---
 
-## ✨ Key Features
-- Manage rental rooms, contracts, and tenants.
-- Desktop interface with **WinForms**.
-- Web interface with **Blazor Server**.
-- **Entity Framework Core** for database access.
+## ✨ Target Features
+* Manage rental rooms, contracts, and tenants.
+* Desktop interface with **WinForms**.
+* Web interface with **Blazor Server**.
+* **Entity Framework Core** for database access.
 
 ---
 
-## 🛠️ Technologies
-- **.NET 9.0 / C#**
-- **WinForms**
-- **Blazor Server**
-- **SQL Server**
-- **Entity Framework Core**
+## 🛠️ Technologies Used
+* **.NET 9.0 / C#**
+* **WinForms**
+* **Blazor Server**
+* **SQL Server**
+* **Entity Framework Core**
 
 ---
 
 ## 📌 Notes
-This project was developed for learning purposes and to apply acquired knowledge.  
-Feedback and pull requests are always welcome! 🚀
+This project is being developed for learning purposes to apply acquired knowledge under the guidance of an instructor.
+
+The project is **not yet complete**.
